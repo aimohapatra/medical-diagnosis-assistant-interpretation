@@ -15,7 +15,7 @@ We analyzed approximately 23,000 X-Ray images from patients at UC San Diego Heal
 #### LLaVA (Large Language and Vision Assistant): 
 A large multi-modal model that combines a vision encoder and Vicuna LLM that achieves impressive chat capabilities.
 
-<img src="LLaVA_architecture.png" alt="LLaVA Architecture" width="500">
+<img src="LLaVA_architecture.png" alt="LLaVA Architecture" width="500" style="display: block; margin: auto;">
 
 #### Baseline Model: 
 Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,000 X-ray images with findings and impressions only.
@@ -52,7 +52,7 @@ Baseline model performance using TF-IDF encoding and cosine similarity:
 
 ## Example Inference
 
-<img src="xray_example.jpg" alt="Example X-ray" width="500">
+<img src="xray_example.jpg" alt="Example X-ray" width="500" style="display: block; margin: auto;">
 
 **Prompt**: Given this radiology report. Could you provide a detailed interpretation of the findings in this chest X-ray?
 
