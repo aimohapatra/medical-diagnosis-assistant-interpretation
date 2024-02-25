@@ -4,7 +4,7 @@
 
 In the radiology world, radiologists must analyze an ever-increasing volume of X-ray images on a daily basis due to the exponential rise of medical imaging. This demanding pace not only poses challenges for accurate diagnosis but also strains the efficiency and effectiveness of healthcare delivery. Recognizing the pressing need for transformative solutions in this domain, we aim to automate  this process by creating a way to use a Large Language Model (LLM) to analyze X-ray image input and generate a text radiology report, similar to ChatGPT. By applying this technology to the field of radiology, we seek to augment diagnostic accuracy while optimizing the operational workflow of this area of healthcare for the benefit of both radiologists and patients.
 
-## Methodology
+## Methods
 
 ### Data
 
@@ -15,7 +15,7 @@ We analyzed approximately 23,000 X-Ray images from patients at UC San Diego Heal
 #### LLaVA (Large Language and Vision Assistant): 
 A large multi-modal model that combines a vision encoder and Vicuna LLM that achieves impressive chat capabilities.
 
-*Insert Image of how LLaVA works *
+![LLaVA Architecture](LLaVA_architecture.png)
 
 #### Baseline Model: 
 Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,000 X-ray images with findings and impressions only.
@@ -24,20 +24,25 @@ Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,
 To improve model accuracy, we intend to integrate more context data into training such as clinical history and gender. By doing so, facilitating a more informed assessment of condition severity, thereby enhancing the overall accuracy of the model's outputs.
 
 
+## Evaluation Metrics
+
+### OpenAI GPT-3.5 Turbo:
+To assess the accuracy of model-generated reports across various disease entities, we employed the GPT-3.5 Turbo model developed by OpenAI. The use of LLM facilitated the extraction of the presence and severity of each disease entity from both the original reports and generated reports. Then, we quantified the model's accuracy by comparing the severity classes identified in the generated reports against those in the original reports. This approach may offer a more effective approach to evaluating diagnostic accuracy and severity assessment of disease entities, due to its enhanced ability to interpret complex sentence structures and contexts, which could potentially improve upon the limitations of traditional NLP methods.
+
 
 ## Results
 
 #### LLM-assisted Evaluation: 
 Baseline model performance by disease entity:
 
-Pneumothorax: 0.966
-Pleural Effusion: 0.708
-Cardiomegaly: 0.683
-Rib Fracture: 0.666
-Edema: 0.641
-Pneumonia: 0.424
+- Pneumothorax: 0.966
+- Pleural Effusion: 0.708
+- Cardiomegaly: 0.683
+- Rib Fracture: 0.666
+- Edema: 0.641
+- Pneumonia: 0.424
 
-*Insert Image of Accuracy Bar Graph*
+![Baseline Model Performance by Disease Entity](model1_results.png)
 
 
 #### NLP Similarity Scores Evaluation:
