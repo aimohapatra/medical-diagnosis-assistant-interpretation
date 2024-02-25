@@ -15,7 +15,7 @@ We analyzed approximately 23,000 X-Ray images from patients at UC San Diego Heal
 #### LLaVA (Large Language and Vision Assistant): 
 A large multi-modal model that combines a vision encoder and Vicuna LLM that achieves impressive chat capabilities.
 
-![LLaVA Architecture](LLaVA_architecture.png)
+<img src="LLaVA_architecture.png" alt="LLaVA Architecture" width="200">
 
 #### Baseline Model: 
 Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,000 X-ray images with findings and impressions only.
@@ -50,6 +50,15 @@ Baseline model performance using TF-IDF encoding and cosine similarity:
 
 *Insert Cosine Similarity Graph*
 
+## Example Inference
+
+![Example X-ray](xray_example.jpg)
+
+**Prompt**: Given this radiology report. Could you provide a detailed interpretation of the findings in this chest X-ray?
+
+**Radiology Report**: Enlarged cardiac silhouette, as before. enlarged central pulmonary arteries, consistent with pulmonary hypertension. left midlung and bibasal streaky densities consistent with subsegmental atelectasis or scarring.
+
+**LLaVA**: Findings of pulmonary hypertension with pulmonary edema.
 
 
 ## Conculsion
