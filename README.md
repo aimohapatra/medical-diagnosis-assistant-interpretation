@@ -12,22 +12,22 @@ We analyzed approximately 23,000 X-Ray images from patients at UC San Diego Heal
 
 *Insert X-Ray Image*
 
-### LLaVA (Large Language and Vision Assistant): 
+#### LLaVA (Large Language and Vision Assistant): 
 A large multi-modal model that combines a vision encoder and Vicuna LLM that achieves impressive chat capabilities.
 
 *Insert Image of how LLaVA works *
 
-### Baseline Model: 
+#### Baseline Model: 
 Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,000 X-ray images with findings and impressions only.
 
-### Areas of Improvements:
+#### Areas of Improvements:
 To improve model accuracy, we intend to integrate more context data into training such as clinical history and gender. By doing so, facilitating a more informed assessment of condition severity, thereby enhancing the overall accuracy of the model's outputs.
 
 
 
 ## Results
 
-### LLM-assisted Evaluation: 
+#### LLM-assisted Evaluation: 
 Baseline model performance by disease entity:
 
 Pneumothorax: 0.966
@@ -40,7 +40,7 @@ Pneumonia: 0.424
 *Insert Image of Accuracy Bar Graph*
 
 
-### NLP Similarity Scores Evaluation:
+#### NLP Similarity Scores Evaluation:
 Baseline model performance using TF-IDF encoding and cosine similarity:
 
 *Insert Cosine Similarity Graph*
