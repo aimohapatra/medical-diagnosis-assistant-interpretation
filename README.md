@@ -50,9 +50,7 @@ Baseline model performance by disease entity:
 #### NLP Similarity Scores Evaluation:
 Baseline model performance using TF-IDF encoding and cosine similarity:
 
-<p align="center">
-    <img src="dsc180similarityplot.PNG" alt="NLP Similarity Scores" width="500">
-</p>
+![Baseline Model Performance Similairty Scores](dsc180similarityplot.PNG)
 
 ## Example Inference
 
