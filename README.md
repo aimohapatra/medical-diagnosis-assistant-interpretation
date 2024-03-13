@@ -67,6 +67,9 @@ Baseline model performance using TF-IDF encoding and cosine similarity:
 
 ## Conculsion
 
+By using LLM-assisted evaluation, the process of extracting  sentiment from complex sentence constructions in the reports is automated, which offers a nuanced assessment of the diagnostic accuracy concerning specific diseases, but may present a lack of consistency. This form of evaluation necessitates further testing to ensure thoroughness and accuracy.
+On the other hand, NLP method of evaluation provides a way of comparing the overall similarity of the LLaVA predicted responses to the ground truth of radiologist reports, but detailed semantics may not be extracted.
+
 
 
 ## The Team
