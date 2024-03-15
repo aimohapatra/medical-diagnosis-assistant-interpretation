@@ -72,7 +72,7 @@ When comparing the cosine similarity scores between the model output and radiolo
 #### LLM-assisted Evaluation: 
 Baseline and Final Model performance by disease entity:
 <p align="center">
-    <img src="f1_table.png" alt="F1 Score Table" width="500">
+    <img src="f1_table.png" alt="F1 Score Table" width="400">
 </p>
 
 
