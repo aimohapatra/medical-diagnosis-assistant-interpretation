@@ -40,11 +40,10 @@ Baseline model performance - TF-IDF encoding and cosine similarity:
 <p align="center">
     <img src="dsc180bsimilarityplot.png" alt="Baseline Model Performance Similarity Scores" width="500">
 </p>
-![Baseline Model Performance Similarity Scores](dsc180bsimilarityplot.png){:width="300px" height="200px"}
-
 Final model with clinical context performance - TF-IDF encoding and cosine similarity
-
-![Final Model Performance Similarity Scores](dsc180bcontextsimscores.PNG){:width="300px" height="200px"}
+<p align="center">
+    <img src="dsc180bcontextsimscores.PNG" alt="Final Model Performance Similarity Scores" width="500">
+</p>
 
 #### LLM-assisted Evaluation: 
 Baseline model performance by disease entity:
