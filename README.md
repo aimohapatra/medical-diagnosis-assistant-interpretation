@@ -20,9 +20,8 @@ A large multi-modal model that combines a vision encoder and Vicuna LLM that ach
 #### Baseline Model: 
 Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,000 X-ray images with findings and impressions only.
 
-#### Areas of Improvements:
-To improve model accuracy, we integrate more context data into training such as clinical history and gender, as well as explore evaluation metrics and benchmarking. By doing so, facilitating a more informed assessment of condition severity, thereby enhancing the overall accuracy of the model's outputs.
-
+#### Final Model:
+We fine-tuned a model built off of LLaVA on a larger set of 100,000 X-ray image data with patient clinical history incorporated.
 
 ## Evaluation Metrics
 
