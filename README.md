@@ -10,8 +10,6 @@ In the radiology world, radiologists must analyze an ever-increasing volume of X
 
 We analyzed approximately 23,000 X-Ray images from patients at UC San Diego Health collected over the years. We also had patient history data, diagnosis from the X-Ray images, and other demographic clinical data that we used to analyze the X-Ray image diagnoses. 
 
-*Insert X-Ray Image*
-
 #### LLaVA (Large Language and Vision Assistant): 
 A large multi-modal model that combines a vision encoder and Vicuna LLM that achieves impressive chat capabilities.
 
@@ -44,6 +42,7 @@ Baseline model performance - TF-IDF encoding and cosine similarity:
 
 Final model with clinical context performance - TF-IDF encoding and cosine similarity
 
+![Final Model Performance Similarity Scores](dsc180bcontextsimilarityplot.png)
 
 #### LLM-assisted Evaluation: 
 Baseline model performance by disease entity:
