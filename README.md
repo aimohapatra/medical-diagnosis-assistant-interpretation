@@ -70,7 +70,7 @@ When comparing the cosine similarity scores between the model output and radiolo
 
 
 #### LLM-assisted Evaluation: 
-Baseline and Final Model performance by disease entity:
+Baseline and Final Model performance by disease entity (F1 score):
 <p align="center">
     <img src="f1_table.png" alt="F1 Score Table" width="400">
 </p>
@@ -86,5 +86,10 @@ The traditional NLP method of evaluation provides a way of comparing the overall
 
 
 ## The Team
-Sally Yu, Eudora Fong, Aishani Mohapatra
+<div style="display: flex; justify-content: space-around; text-align: center; width: 100%;">
+    <span>Sally Yu</span>
+    <span>Eudora Fong</span>
+    <span>Aishani Mohapatra</span>
+</div>
+
 
