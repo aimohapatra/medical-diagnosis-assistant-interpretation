@@ -34,6 +34,7 @@ We fine-tuned a model built off of LLaVA on a larger set of 100,000 X-ray image 
 </p>
 
 **Radiology Report**: Enlarged cardiac silhouette, as before. enlarged central pulmonary arteries, consistent with pulmonary hypertension. left midlung and bibasal streaky densities consistent with subsegmental atelectasis or scarring.
+
 **LLaVA**: Findings of pulmonary hypertension with pulmonary edema.
 
 <p align="center">
@@ -43,6 +44,7 @@ We fine-tuned a model built off of LLaVA on a larger set of 100,000 X-ray image 
 </p>
 
 **Radiology Report**:  Lines and Tubes: Unchanged support devices. Swan-Ganz catheter terminates in the right pulmonary artery.  Mediastinum: The cardiomediastinal silhouette is stably enlarged.  Lungs: Mild interstitial edema. Left midlung atelectasis or scarring.  Pleura: No pneumothorax or effusion.  Bones and soft tissues: Unchanged
+
 **LLaVA**: Lines and Tubes: Unchanged support devices. Swan-Ganz catheter terminates in the right pulmonary artery.  Mediastinum: The cardiomediastinal silhouette is unchanged.  Lungs: Mild pulmonary edema, similar to prior.  Pleura: No pneumothorax or effusion.  Bones and soft tissues: Unchanged.
 
 ## Evaluation Metrics
