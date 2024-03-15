@@ -90,3 +90,6 @@ The traditional NLP method of evaluation provides a way of comparing the overall
 ## The Team
 [Sally Yu](https://www.linkedin.com/in/yushiyu/) , [Eudora Fong](https://www.linkedin.com/in/eudora-fong-ucsd/) , [Aishani Mohapatra](https://www.linkedin.com/in/aishani-mohapatra/)
 
+https://www.linkedin.com/in/albert-hsiao-md-phd/
+Special thanks to our mentor, [Dr. Albert Hsiao](https://www.linkedin.com/in/albert-hsiao-md-phd/)
+
