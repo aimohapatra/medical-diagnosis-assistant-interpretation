@@ -21,19 +21,29 @@ A large multi-modal model that combines a vision encoder and Vicuna LLM that ach
 Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,000 X-ray images with findings and impressions only.
 
 #### Final Model:
-We fine-tuned a model built off of LLaVA on a larger set of 100,000 X-ray image data with patient clinical history incorporated.
+We fine-tuned a model built off of LLaVA on a larger set of 100,000 X-ray image data with patient clinical history as well as authorship of reports incorporated.
 
 ## Example Inference
 
-<p align="center">
-    <img src="xray_example.jpg" alt="Example X-ray" width="500">
-</p>
-
 **Prompt**: Given this radiology report. Could you provide a detailed interpretation of the findings in this chest X-ray?
 
-**Radiology Report**: Enlarged cardiac silhouette, as before. enlarged central pulmonary arteries, consistent with pulmonary hypertension. left midlung and bibasal streaky densities consistent with subsegmental atelectasis or scarring.
+<p align="center">
+    <img src="xray_example1.jpg" alt="Example X-ray1" width="500">
+    <br>
+    Baseline Model
+</p>
 
+**Radiology Report**: Enlarged cardiac silhouette, as before. enlarged central pulmonary arteries, consistent with pulmonary hypertension. left midlung and bibasal streaky densities consistent with subsegmental atelectasis or scarring.
 **LLaVA**: Findings of pulmonary hypertension with pulmonary edema.
+
+<p align="center">
+    <img src="xray_example2.jpg" alt="Example X-ray2" width="500">
+    <br>
+    Final Model
+</p>
+
+**Radiology Report**:  Lines and Tubes: Unchanged support devices. Swan-Ganz catheter terminates in the right pulmonary artery.  Mediastinum: The cardiomediastinal silhouette is stably enlarged.  Lungs: Mild interstitial edema. Left midlung atelectasis or scarring.  Pleura: No pneumothorax or effusion.  Bones and soft tissues: Unchanged
+**LLaVA**: Lines and Tubes: Unchanged support devices. Swan-Ganz catheter terminates in the right pulmonary artery.  Mediastinum: The cardiomediastinal silhouette is unchanged.  Lungs: Mild pulmonary edema, similar to prior.  Pleura: No pneumothorax or effusion.  Bones and soft tissues: Unchanged.
 
 ## Evaluation Metrics
 
@@ -60,14 +70,11 @@ When comparing the cosine similarity scores between the model output and radiolo
 
 
 #### LLM-assisted Evaluation: 
-Baseline model performance by disease entity:
+Baseline and Final Model performance by disease entity:
+<p align="center">
+    <img src="f1_table.png" alt="F1 Score Table" width="500">
+</p>
 
-- Pneumothorax: 0.966
-- Pleural Effusion: 0.708
-- Cardiomegaly: 0.683
-- Rib Fracture: 0.666
-- Edema: 0.641
-- Pneumonia: 0.424
 
 ![Baseline Model Performance by Disease Entity](model1_results.png)
 
