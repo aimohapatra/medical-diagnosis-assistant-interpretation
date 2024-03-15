@@ -38,11 +38,11 @@ To assess the accuracy of model-generated reports across various disease entitie
 #### NLP Similarity Scores Evaluation:
 Baseline model performance - TF-IDF encoding and cosine similarity:
 
-![Baseline Model Performance Similarity Scores](dsc180bsimilarityplot.png)
+![Baseline Model Performance Similarity Scores](dsc180bsimilarityplot.png){ width=200px }
 
 Final model with clinical context performance - TF-IDF encoding and cosine similarity
 
-![Final Model Performance Similarity Scores](dsc180bcontextsimscores.PNG)
+![Final Model Performance Similarity Scores](dsc180bcontextsimscores.PNG){ width=200px }
 
 #### LLM-assisted Evaluation: 
 Baseline model performance by disease entity:
