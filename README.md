@@ -81,7 +81,5 @@ The traditional NLP method of evaluation provides a way of comparing the overall
 
 
 ## The Team
-Sally Yu
-Eudora Fong
-Aishani Mohapatra
+Sally Yu, Eudora Fong, Aishani Mohapatra
 
