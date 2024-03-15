@@ -42,7 +42,7 @@ Baseline model performance - TF-IDF encoding and cosine similarity:
 
 Final model with clinical context performance - TF-IDF encoding and cosine similarity
 
-![Final Model Performance Similarity Scores](dsc180bcontextsimilarityplot.png)
+![Final Model Performance Similarity Scores](dsc180bcontextsimscores.png)
 
 #### LLM-assisted Evaluation: 
 Baseline model performance by disease entity:
