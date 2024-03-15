@@ -23,16 +23,27 @@ A large multi-modal model that combines a vision encoder and Vicuna LLM that ach
 Building off of the LLaVA framework, we fine-tuned the model on a dataset of 23,000 X-ray images with findings and impressions only.
 
 #### Areas of Improvements:
-To improve model accuracy, we intend to integrate more context data into training such as clinical history and gender. By doing so, facilitating a more informed assessment of condition severity, thereby enhancing the overall accuracy of the model's outputs.
+To improve model accuracy, we integrate more context data into training such as clinical history and gender, as well as explore evaluation metrics and benchmarking. By doing so, facilitating a more informed assessment of condition severity, thereby enhancing the overall accuracy of the model's outputs.
 
 
 ## Evaluation Metrics
+
+### NLP Techniques and Similarity Scoring
+We applied traditional NLP techniques and compared both models with the ground truth (radiologist reports) using similarity scores. Specifically, we vectorized the text reports using Term Frequency - Inverse Document Frequency (TF-IDF) and performed cosine similarity to produce a similarity score that quantifies model performance in terms of sentence structure development and general similarity to real radiology reports. 
 
 ### OpenAI GPT-3.5 Turbo:
 To assess the accuracy of model-generated reports across various disease entities, we employed the GPT-3.5 Turbo model developed by OpenAI. The use of LLM facilitated the extraction of the presence and severity of each disease entity from both the original reports and generated reports. Then, we quantified the model's accuracy by comparing the severity classes identified in the generated reports against those in the original reports. This approach may offer a more effective approach to evaluating diagnostic accuracy and severity assessment of disease entities, due to its enhanced ability to interpret complex sentence structures and contexts, which could potentially improve upon the limitations of traditional NLP methods.
 
 
 ## Results
+
+#### NLP Similarity Scores Evaluation:
+Baseline model performance - TF-IDF encoding and cosine similarity:
+
+![Baseline Model Performance Similarity Scores](dsc180bsimilarityplot.png)
+
+Final model with clinical context performance - TF-IDF encoding and cosine similarity
+
 
 #### LLM-assisted Evaluation: 
 Baseline model performance by disease entity:
@@ -45,12 +56,6 @@ Baseline model performance by disease entity:
 - Pneumonia: 0.424
 
 ![Baseline Model Performance by Disease Entity](model1_results.png)
-
-
-#### NLP Similarity Scores Evaluation:
-Baseline model performance using TF-IDF encoding and cosine similarity:
-
-![Baseline Model Performance Similarity Scores](dsc180bsimilarityplot.png)
 
 ## Example Inference
 
@@ -73,5 +78,7 @@ On the other hand, NLP method of evaluation provides a way of comparing the over
 
 
 ## The Team
-
+Sally Yu
+Eudora Fong
+Aishani Mohapatra
 
