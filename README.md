@@ -60,6 +60,8 @@ Baseline model performance by disease entity:
 
 ![Baseline Model Performance by Disease Entity](model1_results.png)
 
+A comparative analysis of performance between the baseline and final model evaluated by ChatGPT 3.5 Turbo demonstrates an improvement in accuracy across all six disease entities examined. The final model still demonstrate a bias toward the "none" class across the severity spectrum for all six disease entities, as illustrated in the figure above. This inclination may stem from an insufficient address of class imbalance prior to training, given that the dataset is disproportionately skewed toward the "none" class. Further tuning of the model should therefore integrate techniques to handle the class imbalance issue to improve model precision
+
 ## Example Inference
 
 <p align="center">
